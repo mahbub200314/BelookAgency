@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belook Agency</title>
+
+    <!---main css connect-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--font awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="font-sans">
+    <!---navbar------>
+    <navbar class="flex sticky bg-white top-0 justify-between px-[4%] py-[1%]  items-center  md:border-b-2 z-[999] md:h-[80px]">
+
+        <div class="logo w-28">
+            <img src="./assests/images/logo/Logo.jpg" alt="">
+        </div>
+
+        <nav class="md:absolute md:top-[80px] md:right-0 md:left-0 md:hidden transition-all z-10 bg-white" id="nav">
+            <ul class="flex gap-5 border-2 border-gray px-5 py-3 rounded-[15px] md:rounded-none md:flex-col ">
+                <li class="dropdown"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-item  ">
+                    <li><a href="#">HOME 1</a></li>
+                    <li><a href="#">HOME 2</a></li>
+                    <li><a href="#">HOME 3</a></li>
+                    <li><a href="#">HOME 4</a></li>
+                    <li><a href="#">HOME 5</a></li>
+                </ul>
+                </li>
+
+
+                <li><a href="#">Company</a></li>
+                <li class="dropdown"><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                
+                    <ul class="dropdown-item  ">
+                        <li><a href="#">COMPANY 1</a></li>
+                        <li><a href="#">COMPANY 2</a></li>
+                        <li><a href="#">COMPANY 3</a></li>
+                        <li><a href="#">COMPANY 4</a></li>
+                        <li><a href="#">COMPANY 5</a></li>
+                        <li><a href="#">COMPANY 6</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">Testimonials</a></li>
+                <li class="dropdown"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-item  ">
+                        <li><a href="#">PAGES 1</a></li>
+                        <li><a href="#">PAGES 2</a></li>
+                        <li><a href="#">PAGES 3</a></li>
+                        <li><a href="#">PAGES 4</a></li>
+                        
+                    </ul>
+                
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li class="hidden sm:block">
+                    <a href="#"><button class="btn">Contact Us</button></a></li>
+            </ul>
+        </nav>
+
+        <nav2 class="flex gap-6 items-center"><!---nav 2-->
+            <input type="search" name="search" id="search-input" placeholder="seacrh" class="border-[1px] border-[gray] hidden items-center px-2 py-3 mx-2 ">
+
+            <i class="fa-solid fa-magnifying-glass cursor-pointer mx-2" id="search-icon"></i>
+
+            <a href="#"><button class="btn sm:hidden">Contact Us</button></a>
+            <i class="fa-solid fa-bars text-2xl cursor-pointer invisible md:visible" id="bar" ></i>
+        </nav2><!---nav2-->
+
+    </navbar>
+    <!----navbar end------------->
+
+
+
+    <!----hero sectin start---------------->
+
+    <div class="hero min-h[100vh]">
+        <marquee behavior="scroll" direction="center" scrollamount="15" class="text-[13rem] sm:text-[6rem] md:text-[9rem] font-[700] overflow-clip">Digital Creative Solutions</marquee>
+
+        <div class="grid grid-cols-2 w-full md:grid-cols-1 ">
+            <div class="px-[15%] sm:px-[5%] ">
+                <p class="my-10 tracking-[1.2px] word-spacing-large]">We're not just about pixels and code we're they
+                    architects of digital  experiences. With a blend of
+                    creativity, technology, and strategy crafting</p>
+
+                    <buttton class="btn my-10 group">Explore Our Services <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i></buttton>
+
+                    <hr class="my-10 ">
+
+                    <div class="flex gap-[20px] flex-wrap">
+                    <button class="services">Digital Agency</button> <button class="services">Marketing</button><button class="services">Consulting</button><button class="services">Website Bulding</button>
+                    <button class="services">SEO Camping</button>
+                    </div>
+            </div>
+            
+            <div class="px-10 sm:px-[2%] pr-[15%] flex items-center md:my-10">
+                <img src="./assests/images/hero/Image.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!----hero section end------------------>
+      <!----hero section end------------------>
+
+
+
+
+    <!----about section start--------------->
+
+
+    <div class="about min-h-[100vh] m-[5%] sm:m-0 overflow-clip">
+
+    <div class="bg-bgBlack rounded-[1rem] sm:rounded-none relative"><!---about sections items-->
+
+        <marquee class="absolute bottom-0 overflow-clip" behavior="" direction="" scrollamount="15"><img src="./assests/images/bg/Services.png" alt=""> </marquee>
+        <img class="absolute top-[14rem] left-[-8rem] w-[24rem] overflow-clip" src="./assests/images/bg/Vector.png" alt="">
+
+        <marquee  behavior="scrool" direction="" scrollamount="15" class=" border-b-[0.5px] border-b-[gray] flex items-center gap-10 h-[6rem] overflow-clip "> 
+            <span><i class="fa-solid fa-arrow-right  icon"></i> Digital Agency</span>
+            <span><i class="fa-solid fa-arrow-right  icon"></i> Marketing</span>
+            <span><i class="fa-solid fa-arrow-right  icon"></i> SEO Camping</span>
+        </marquee>
+
+<div class="p-[3%] ">
+        <div class="title text-center">
+            <heading class="text-white font-[500] text-[1.5rem] sm:text-[1rem] -mb-16">About Our Agency</heading>
+            <p class="text-white text-[3rem] sm:text-[1.8rem] font-[600] mb-10 px-[15%] md:px-[5%]">At our digital agency, we're not just about
+                pixels and code; we're  architects of digital
+                experiences. With a blend of creativity,
+                technology, and strategy
+            </p>
+
+            <button class="btn group"> Learn Something More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i></button>
+
+
+        </div><!---title end-->
+
+        <div class="cards flex flex-wrap gap-5 items-center justify-center my-[8rem] sm:mb-5 ">
+            <div class="card">
+                <img src="./assests/images/card/Group.png" alt="">
+
+                <h2>Branding</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+
+
+            <div class="card">
+                <img src="./assests/images/card/curve 1.png" alt="">
+                
+                <h2>UI/UX Design</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+
+
+
+            <div class="card">
+                <img src="./assests/images/card/Frame 17.png" alt="">
+                
+                <h2>Web Development</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+
+
+            <div class="card">
+                <img src="./assests/images/card/coding 1.png" alt="">
+                
+                <h2>Video Editing</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+        </div>
+    </div>
+    </div><!---about sections items  end-->
+
+    </div>
+
+        <!----about section end--------------->
+          <!----about section end--------------->
+
+
+
+
+
+
+          <!-----projects start----------->
+
+          <div class="projects min-h-[100vh] text-center grid justify-center items-center place-items-center  ">
+            <h4 class="text-2xl text-theme font-semibold">Latest Projects</h4>
+            <heading class="text-[3rem] font-[600]">We Have Compelete 2580+ Global Projects Explore Projects</heading>
+
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-12 place-content-center content-center max-w-fit  mt-14 mx-5">
+
+            <div class="grid gap-14">
+                <div class="project">
+                    <img src="./assests/images/projects/Image.jpg" alt="">
+                    <h2>Creative Website Mockup</h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="./assests/images/projects/Image2.jpg" alt="">
+                    <h2>Mobile Application Design</h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="./assests/images/projects/Image3.jpg" alt="">
+                    <h2>Motion Design and Video Editing</h2>
+                    <p>Design-create Branding</p>
+                </div>
+            </div>
+            <div class="grid gap-16 mt-32 sm:mt-5">
+                <div class="project">
+                    <img src="./assests/images/projects/Image4.jpg" alt="">
+                    <h2>Branidg Design Identity</h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="./assests/images/projects/Image5.jpg" alt="">
+                    <h2>3D Design Aanimation </h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="./assests/images/projects/Image6.jpg" alt="">
+                    <h2>Creative Bussiness Illustration</h2>
+                    <p>Design-create Branding</p>
+                </div>
+            </div>
+                
+                 </div>
+
+                 <button class="btn my-14 group"> Explore More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i></button>
+
+          </div>
+
+           <!---projects end------------------->   
+           <!---projects end-------------------> 
+
+
+
+
+           <!---why choose us -->
+
+
+           <div class="why-us p-[4%] sm:p-0 overflow-clip">
+            <div class="bg-bgBlack rounded-[1rem] sm:rounded-none text-white relative">
+
+
+                <marquee behavior="scrool" direction="center" scrollamount="15" class="text-[10rem] sm:text-[6rem] font-bold"> Awards Winning Agency</marquee>
+
+                <div class="grid grid-cols-2 md:grid-cols-1 place-items-center px-[7%] py-[5%]">
+                    <div>
+                        <header class="my-10">
+                            <h4 class="text-2xl">Why Choose Us</h4>
+                            <h2 class="text-4xl font-semibold">Proffesional and Award Winning Digital Marketing Agency</h2>
+                        </header>
+                            <div class="according z-10">
+                                <div class="according-item z-10">
+                                    <h2 class="more "><span>01. Company Misson and Vision</span> <span><i class="fa-solid fa-arrow-right"></i></span></h2>
+                                    <p>At our digital agency, we're not just about pixels and code; we're  architects digital experiences. With a blend of creativity,  technology, and strategy, we craft digital solutions that resonate with
+                                        audiences and drive results. From innovative web designs that captivate
+                                    </p>
+                                </div>
+                                <div class="according-item z-10">
+                                    <h2  class="more "><span>01. Company Misson and Vision</span> <span><i class="fa-solid fa-arrow-right"></i></span></h2>
+                                    <p>At our digital agency, we're not just about pixels and code; we're  architects digital experiences. With a blend of creativity,  technology, and strategy, we craft digital solutions that resonate with
+                                        audiences and drive results. From innovative web designs that captivate
+                                    </p>
+                                </div>
+                                <div class="according-item z-10">
+                                    <h2  class="more"><span>01. Company Misson and Vision</span> <span><i class="fa-solid fa-arrow-right"></i></span></h2>
+                                    <p>At our digital agency, we're not just about pixels and code; we're  architects digital experiences. With a blend of creativity,  technology, and strategy, we craft digital solutions that resonate with
+                                        audiences and drive results. From innovative web designs that captivate
+                                    </p>
+                                </div>
+                            </div>
+                       
+                    </div>
+                    <div class="z-[10]">
+                        <img class="h-[500px]  rounded-md z-[10]" src="./assests/images/award/Image.png"  alt="" >
+                    </div>
+                </div>
+            </div>
+           </div>
+
+
+           <!---why chose us end-->
+                <!---why chose us end-->
+
+
+
+                <!-----blog---------------->
+
+                <div class="blog min-h-[100vh] overflow-clip">
+                    <header class="text-center my-10">
+                        <h4 class="text-[1.4rem] text-theme">Best Testimonials</h4>
+                        <h2 class="text-[3rem] font-[600]">Explore Customer Say Our Work</h2>
+                    </header>
+
+                    <div class="slider-container pl-[16%] sm:pl-[10%] relative ">
+
+                       <div class="navigation absolute left-[5%] top-[6rem] sm:top-[25rem] sm:left-[5%] flex flex-col sm:flex-row sm:gap-4 ">
+
+                        <i class="fa-solid fa-arrow-right prev w-[50px] p-4   border-[1px] border-[gray] rounded-full rotate-[-140deg] my-2 sm:my-5 hover:bg-theme hover:border-transparent cursor-pointer" ></i>
+                        <i class="fa-solid fa-arrow-right next w-[50px] p-4  border-[1px] border-[gray] rounded-full rotate-45 my-5 hover:bg-theme hover:border-transparent cursor-pointer"></i>
+
+                       </div>
+
+
+                        <div class="slider flex overflow-x-scroll hide-scrollbar gap-20 ">
+
+                            <div class="slider-item  grid grid-cols-2 ">
+                                
+                                <div class="img">
+                                    <img src="./assests/images/testimonial/Image.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>" we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                            <div class="slider-item grid grid-cols-2">
+                                
+                                <div class="img">
+                                    <img src="./assests/images/testimonial/Image2.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>"we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresees,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                            <div class="slider-item grid grid-cols-2">
+                                
+                                <div class="img">
+                                    <img src="./assests/images/testimonial/Image.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>"we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                            <div class="slider-item grid grid-cols-2">
+                                
+                                <div class="img">
+                                    <img src="./assests/images/testimonial/Image2.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>"we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                        </div><!---slider end-->
+
+                    </div><!--slider container------>
+
+
+                </div>
+                <!---blog end---------------->
+                  <!---blog end---------------->
+
+
+
+
+
+                  <!----partner--------->
+
+                  <div class="partner grid grid-cols-5 sm:grid-cols-2  flex-wrap px-[10%] py-5 ">
+
+                   
+                    <div class="brand"><img src="./assests/images/logo/Logo_1.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_2.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_3.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_4.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_5.jpg" alt=""></div>
+                
+
+                   
+                   
+                    <div class="brand"><img src="./assests/images/logo/Logo_6.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_7.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_8.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_9.jpg" alt=""></div>
+                    <div class="brand"><img src="./assests/images/logo/Logo_10.jpg" alt=""></div>
+
+                
+                   </div>
+                  
+                   <marquee  behavior="scrool" direction="" scrollamount="15" class="bg-[gray] border-b-[0.5px]  flex items-center gap-10 h-[6rem] overflow-clip "> 
+                    <span><i class="fa-solid fa-arrow-right  icon"></i> Digital Agency</span>
+                    <span><i class="fa-solid fa-arrow-right  icon"></i> Marketing</span>
+                    <span><i class="fa-solid fa-arrow-right  icon"></i> SEO Camping</span>
+                </marquee>
+
+                  <!---partner end-------->
+                  
+                  <!---partner end-------->
+
+
+                  <!-----latest news-------------->
+
+                  <div class=" min-h-[90vh] flex flex-col items-center">
+
+                    <header class="text-center my-10">
+                        <h4 class="text-[1.4rem] text-theme">Latest News and Blog</h4>
+                        <h2 class="text-[2.5rem] font-[600]">Explore Latest News and Blog</h2>
+                    </header>
+
+                      <div class=" flex  gap-10  w-[80%] md:w-[95%] sm:flex-wrap border-text2 border-[1px] rounded-md p-5"><!--latest news-->
+
+                        <div class="img  w-[70rem]"><img class="h-full" src="./assests/images/blog/Image.jpg" alt=""></div>
+
+                        <div class="news grid gap-10 mt-5">
+                            <p><span><i class="fa-solid fa-tag"></i> Creative Design</span> <span><i class="fa-solid fa-calendar-days"></i> December 25,2024</span></p>
+                            <h3 class="text-[1.8rem] font-bold">We thrive pushing boundaries an exceeding expectations team digital
+                                experts brings wealth knowledge
+                            </h3>
+                            <button class="btn w-fit inline-block h-fit group ">Read More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+                        </div>
+                        
+                    </div><!---latest news end-->
+
+
+
+                    <div class=" flex  gap-10  w-[80%] md:w-[95%] sm:flex-wrap  border-text2 border-[1px] rounded-md p-5 mt-10"><!--latest news-->
+
+
+                        <div class="news grid gap-10 mt-5">
+                            <p><span><i class="fa-solid fa-tag"></i> Creative Design</span> <span><i class="fa-solid fa-calendar-days"></i> December 25,2024</span></p>
+                            <h3 class="text-[1.8rem] font-bold">We thrive pushing boundaries an exceeding expectations team digital
+                                experts brings wealth knowledge
+                            </h3>
+                            <button class="btn w-fit inline-block h-fit group ">Read More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+                        </div>
+
+                        <div class="img  w-[70rem]"><img class="h-full" src="./assests/images/blog/Image2.jpg" alt=""></div>
+
+                        
+                    </div><!---latest news end-->
+
+                  </div>
+                  
+                  <!-----latest news end-------------->
+                  
+                  <!-----latest news end-------------->
+
+
+
+                <!---footer start----------------->
+
+                <footer class="min-h-[100vh] bg-bgBlack ">
+
+                    <marquee behavior="scrool" direction="center" scrollamount="15" class="text-[10rem] text-white sm:text-[6rem] font-bold border-b-[0.5px] border-text2 pb-10"> Get In Touch-Get In Touch</marquee>
+
+                    <div class="flex gap-5 text-white justify-evenly py-[5rem] mx-5 md:flex-wrap md:justify-start md:gap-20 "><!----->
+                      <div class="grid gap-10">
+                        <h3 class="text-[2rem] font-[600]">Unleashing brand potential through<br>
+                            creative design and innovation
+                        </h3>
+                        <button class="btn w-fit inline-block h-fit group ">Let's Talk Your Projects <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+                            
+                      </div>
+
+                      <div >
+                        <p class="text-[1.2rem] font-[500]">55 Main Stret, 2nd block</p>
+                        <p class="text-[1.2rem] font-[500]">Malborne, Australia</p>
+                        <p class="my-5">support@gmail.com</p>
+                        <p class="text-2xl font-medium">+008 01887239062</p>
+
+                      </div>
+                    </div>
+                    
+                    <!---------------------------------------->
+                    
+                    <div class="flex justify-center ">
+                    <div class="subscribe-button text-white flex md:flex-wrap md:justify-center md:mx-10 gap-10 items-center border-[1px] border-text2 px-[3%] py-5 rounded-[1rem] ">
+
+                        <p class="text-[1.8rem] font-bold">Subscribe Our Newsletter</p> 
+                        <i href="#" class="relative"> <input type="email" name="" id="" placeholder="Email-Addres " class="h-[3.5rem] w-[22rem] sm:w-[18rem] p-5 rounded-md">
+                            <button class="btn w-fit inline-block h-fit group absolute right-2 top-[9%] ">Subscribe <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+
+                        </i>
+
+                    </div>
+                    </div>
+                    
+                    
+                    <!------------------------------------>
+
+                    <div class="flex md:flex-wrap md:gap-3 sm:justify-center justify-evenly items-center text-white py-3">
+
+                        <p>© 2024 Belook, All Rights Reserved</p>
+
+                     <a href=""><i class="fa-solid fa-arrow-up bg-theme text-white px-4 py-3 rounded-full"></i> </a>
+
+                        <p class="flex gap-5">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Linkedin</a>
+                            <a href="#">Instagram</a>
+                        </p>
+
+                        
+
+                    </div>
+
+                </footer>
+
+
+                <!---footer end----------->
+</body>
+<script src="script.js"></script>
+</html>
