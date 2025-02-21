@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Scroll to the left (previous item)
     prevButton.addEventListener('click', function() {
         slider.scrollBy({
-            left: -sliderItemWidth,  // Scroll one full slider width to the left
+            left: -(sliderItemWidth + 80),  // Scroll one full slider width to the left
             behavior: 'smooth'          // Smooth scrolling
         });
     });
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Scroll to the right (next item)
     nextButton.addEventListener('click', function() {
         slider.scrollBy({
-            left: sliderItemWidth,   // Scroll one full slider width to the right
+            left: (sliderItemWidth + 80) ,   // Scroll one full slider width to the right
             behavior: 'smooth'          // Smooth scrolling
         });
     });
