@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belook Agency</title>
+
+    <!---main css connect-->
+
+    <!--font awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" crossorigin href="/assets/index-DDuBpGMp.css">
+</head>
+<body class="font-sans">
+    <!---navbar------>
+    <navbar class="flex sticky bg-white top-0 justify-between px-[4%] py-[1%]  items-center  md:border-b-2 z-[999] md:h-[80px]">
+
+        <div class="logo w-28">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+
+        <nav class="md:absolute md:top-[80px] md:right-0 md:left-0 md:hidden transition-all z-10 bg-white" id="nav">
+            <ul class="flex gap-5 border-2 border-gray px-5 py-3 rounded-[15px] md:rounded-none md:flex-col ">
+                <li class="dropdown"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-item  ">
+                    <li><a href="#">HOME 1</a></li>
+                    <li><a href="#">HOME 2</a></li>
+                    <li><a href="#">HOME 3</a></li>
+                    <li><a href="#">HOME 4</a></li>
+                    <li><a href="#">HOME 5</a></li>
+                </ul>
+                </li>
+
+
+                <li><a href="#">Company</a></li>
+                <li class="dropdown"><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                
+                    <ul class="dropdown-item  ">
+                        <li><a href="#">COMPANY 1</a></li>
+                        <li><a href="#">COMPANY 2</a></li>
+                        <li><a href="#">COMPANY 3</a></li>
+                        <li><a href="#">COMPANY 4</a></li>
+                        <li><a href="#">COMPANY 5</a></li>
+                        <li><a href="#">COMPANY 6</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">Testimonials</a></li>
+                <li class="dropdown"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-item  ">
+                        <li><a href="#">PAGES 1</a></li>
+                        <li><a href="#">PAGES 2</a></li>
+                        <li><a href="#">PAGES 3</a></li>
+                        <li><a href="#">PAGES 4</a></li>
+                        
+                    </ul>
+                
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li class="hidden sm:block">
+                    <a href="#"><button class="btn">Contact Us</button></a></li>
+            </ul>
+        </nav>
+
+        <nav2 class="flex gap-6 items-center"><!---nav 2-->
+            <input type="search" name="search" id="search-input" placeholder="seacrh" class="border-[1px] border-[gray] hidden items-center px-2 py-3 mx-2 ">
+
+            <i class="fa-solid fa-magnifying-glass cursor-pointer mx-2" id="search-icon"></i>
+
+            <a href="#"><button class="btn sm:hidden">Contact Us</button></a>
+            <i class="fa-solid fa-bars text-2xl cursor-pointer invisible md:visible" id="bar" ></i>
+        </nav2><!---nav2-->
+
+    </navbar>
+    <!----navbar end------------->
+
+
+
+    <!----hero sectin start---------------->
+
+    <div class="hero min-h[100vh]">
+        <marquee behavior="scroll" direction="center" scrollamount="15" class="text-[13rem] sm:text-[6rem] md:text-[9rem] font-[700] overflow-clip">Digital Creative Solutions</marquee>
+
+        <div class="grid grid-cols-2 w-full md:grid-cols-1 ">
+            <div class="px-[15%] sm:px-[5%] ">
+                <p class="my-10 tracking-[1.2px] word-spacing-large]">We're not just about pixels and code we're they
+                    architects of digital  experiences. With a blend of
+                    creativity, technology, and strategy crafting</p>
+
+                    <buttton class="btn my-10 group">Explore Our Services <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i></buttton>
+
+                    <hr class="my-10 ">
+
+                    <div class="flex gap-[20px] flex-wrap">
+                    <button class="services">Digital Agency</button> <button class="services">Marketing</button><button class="services">Consulting</button><button class="services">Website Bulding</button>
+                    <button class="services">SEO Camping</button>
+                    </div>
+            </div>
+            
+            <div class="px-10 sm:px-[2%] pr-[15%] flex items-center md:my-10">
+                <img src="/assets/Image-JglbPPa-.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!----hero section end------------------>
+      <!----hero section end------------------>
+
+
+
+
+    <!----about section start--------------->
+
+
+    <div class="about min-h-[100vh] m-[5%] sm:m-0 overflow-clip">
+
+    <div class="bg-bgBlack rounded-[1rem] sm:rounded-none relative"><!---about sections items-->
+
+        <marquee class="absolute bottom-0 overflow-clip" behavior="" direction="" scrollamount="15"><img src="/assets/Services-BU49SdTN.png" alt=""> </marquee>
+        <img class="absolute top-[14rem] left-[-8rem] w-[24rem] overflow-clip" src="/assets/Vector-hjqDF2hm.png" alt="">
+
+        <marquee  behavior="scrool" direction="" scrollamount="15" class=" border-b-[0.5px] border-b-[gray] flex items-center gap-10 h-[6rem] overflow-clip "> 
+            <span><i class="fa-solid fa-arrow-right  icon"></i> Digital Agency</span>
+            <span><i class="fa-solid fa-arrow-right  icon"></i> Marketing</span>
+            <span><i class="fa-solid fa-arrow-right  icon"></i> SEO Camping</span>
+        </marquee>
+
+<div class="p-[3%] ">
+        <div class="title text-center">
+            <heading class="text-white font-[500] text-[1.5rem] sm:text-[1rem] -mb-16">About Our Agency</heading>
+            <p class="text-white text-[3rem] sm:text-[1.8rem] font-[600] mb-10 px-[15%] md:px-[5%]">At our digital agency, we're not just about
+                pixels and code; we're  architects of digital
+                experiences. With a blend of creativity,
+                technology, and strategy
+            </p>
+
+            <button class="btn group"> Learn Something More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i></button>
+
+
+        </div><!---title end-->
+
+        <div class="cards flex flex-wrap gap-5 items-center justify-center my-[8rem] sm:mb-5 ">
+            <div class="card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUqSURBVHgBtVrhleI4DDb37v/lKlh3cHSw6WCnA+hgpgNyFUAHzHUwV0FmK2CmgtABbAXfWiATxVi2EzJ6Ty8QSbY+W5YdJQszEwGw7lI7Xjr+7rgS7OnI/On44PjnYrE4mhloYR4g5zw5+ex47dgK0dHxh+Oz4ye+vrMO2SwD3f8d7+YCVUwOQO24RU/0u+H7VaBLslZp49nxQbSz55n9cgCV41fu9OR4Rw5lbKJAAh0r2v1aQK7hFTsPBlAV2mWBCF0JqKM+zZzkGtyKxuuRtsVAhI3lvoi25lHiUGrHzkLQxmggwnbHfR+m9O0bqdAvxMZMIB7ZltuxZgJxEpkOBsNssim0qXkUO+h04MVcF7a5EbbjZlasiQb9iGwU3Yo7O0WcbRjUgX/vMEzbJFuZPAjpR9macYprNtiJe1Ew7v8T+tFvcd0XsvsIriG3FrZ3gCQIcc+vmVUOhM8WXUQ2AIPCTIbMYg8AbTUQfL9i3RNS6wV9DreKXC48oCCToWxDrMRon2IghG7N8r3WmE0q9Hq+o9JNrh2pexmojJ4HXceEydlgHR9OrQyzAueyQEQ4tTLMFN2KB7QNBdnZQJAEUJbNlhyGHSIHygiIhv/7EX9K+ON1qthNmzDsmCtx7w4M7k/GIe1lP4hnpyrWX+BPHdp5Jw8JEH42VhHZDQz60PMn4zV3SEyp+hX9GttCyU6qo/c6LXyGRR9WLwmDDpGUHAEDZDIZ7o/sjUk7eiro1/5hro+nRB+KMsmt48bo9Bdf/3VPeS+Oz5oiPQU6XpNuYBsjenKsoO9T73ytb+tDawn5vaUobSu2eho1t7VymeWsnKcvtT4o66R2Zh/31owkaGn0vv9UWHekQ6FlzbU4oBEVCj41R9yFEsDblMIBh+B/1EdiXX2aYWEjJFoSlQdyNHFHLf/UgPpqyJuZThdHjO7sMfAlpF9k/yf/qZXp9aP0w8m/R+RWNDaVjnzduz7OiT72ylKmwbzMCJE2redC+Rz0mA+82KIZR2SkRpEvWb42EwnXjTKVuW57hSK/ZFWaEUL0d0xJLOBvJk5Htl+a6eTPUx+KvAp8CenbxY/S9JaQt8g96Oi2NhURov389oDYKXKomJP7M9Ho+tMcm63cENeZGPWOps5iHmxRtYVtNjcndJ1S31bZBc0Gud3XO3UZPaQfB2g33wr9TUK3y4T9y2BG2SDlaKONDIYlG/ncvcc1I/lj/Jrlsn7caGCQeHQQOsP1nXKU5dEHHcQfimiGXxGny8zKfhB/OLv1Z3QQPpJ2oaPDm/eGPt8nSzZBmzX6Ap16noJeakrNRjxRoCCNog+dNgUi0m5J8aEJ2k4Nqp7NUJhG0de0vrIcdMroxWcjolAr8o3vyIPGfAU6H04HGWYRXX02ggbJyQ73NdyNDCcRZqS7mgoE/Tq6hRPS2axjtiZF6NPeVgMR6HYSUNgB4kVsGrBn9KFEtk+BTiybZZNACOa2UyOTnSKAwA76fcIX6Oj3HsP3Lie+n81mKDgJaM61osOm0IbC5DVwNqQOBW+DI2CIDmYsYfjqrfgMFbRhuY0W01+9bTwIzPQecdLbVUx8GYphJmsngwgalRnKjrQdDQSRTDYbYbig96WAMG5DlLNAiWBtvoIw4VMLlG2INYYn4/0soZSjCCBaR8+IH/PvgKA/UG5w/3FObSbQo585WXehJ8cfZlhg8584Hc21SE6j+2b6T5ykLulQtXGXKn7n6CEgkjD88Owfc3XWCpWz4J/mCvZ9rm+0fgOsWhS5FmqIWwAAAABJRU5ErkJggg==" alt="">
+
+                <h2>Branding</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+
+
+            <div class="card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPtSURBVHgB1VmLkdowEF3SQOgg6iCU4A5yHUAqwB3gDiAVQCrwpQJfB+Qq8HXApYKNdKzODyHZkrGY4c3sAJJW2qf9yBZEmcHMCy1HPqPWMqdHhDa8FamFzI4eEWi8EGro0WDCSMtJyNjwKumRICSs8Y1IRY8Eh0RFjwiHxIruhBlNCCmtJpkXWn7OZrODbiv09+/SpkQQb1retbxqedE6LzQCkxFxSBy0/NOy1GLPjXeRN5E5iHLGvWj5rUk90z3hhBPCJPhai4qYwxycKy0HqHStliXlgCy407IXIxcOCWNExTec4LIxKyFiCf2APnO4bmgsxPAQbiYQWBMJbZ1NSydjwkOUjzZUxBt2kQVlgqxdA4ESCKWRkXBiduJd/36S9oIygT0l3WmLJ8PnJGRP+wIXyAEJL4M6sHabMlnp23nu8qagjLAbaXdfwq2V3IwPa8gRo7yU3xvcEXF3zlyxZLZjSYTOCYNGSOGYo5Cd/CWKz5WRbyXRitGFxG3hGbPjrpKZxfY8sZckzG/yRBkxxsZwAaGQ1UupJNrAOFs59uD2DfQrvjzUsngphkQjn8ue8WbMSb5fkYFx9/OSQ6KEhVWPzkVp7iMj/Xm9xP4T1Cz2HKFnjGmgrZcMjJvGS7I7WJWQRDEUVjCPfYSZp5IBO8Z7ia/vnfbQZ0NmcDIgXTnt0WScudBLRYySQS3fj054fLzkUCQYkt5pTyYjeko8M3ypx11VauWzdPqOFAkOPI9J31gytZCZDw1UsvONJywuPBSx6FXSO/2fZCR8GtnAo+SD8ugU7gYnQxbZJ+pcJb3TX0Hs24RuICqUR+eUsqG+RccQ8SY99K+kf+fR8xoM5AsaA444QwJ6ZodPPX2hxx1rsHLa532bY/CF+mHumL5ROv5omQd2UNH5Ms6HvzDmE/p+y951rQN6g0Re6fpmMAYHOm9CqEJ9DbT3VaZfFN6cfnBXThUlIpT0oXiX8Gl7wm4DRWKfZBMk7ooSweGT3hpsDTLj1tC2pDAJU6YPyYS4OxeSKhfoN+w/6RVf3lOxrLOifhJz0EdC2yFbPo3hEe8M3HPSg0HGI4tA/xWJQP/wdRDfcLLywEk/oDtEYmlJcGy+cE8SRuh6bygHdKYnIYo2RJKv+MGjBnseKJ/ZSMAErc0VkacEXff9ohWDFd2TBBhjsOXujTL1Ocz+79EAqUYM3GQnAZPtwIB6DBmYy5bQFua8CwnfxURlvUQ3gLsn4srTNx0JmdB6oHTad772EfMb71ycV5OTkElL1/089mrfP79Cr2QhAYtVQGYxFQmY33plnY0ELGbJ8JQkZG4Fc+cjAQtWU5OAuXdjSPwHcgGlDFLG5O0AAAAASUVORK5CYII=" alt="">
+                
+                <h2>UI/UX Design</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+
+
+
+            <div class="card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAyCAYAAAAEA2g/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANNSURBVHgB7Vr/lZpAEB7v+X9IBcEKYioIqSBeBWoFagXBCs5UoFfB3VWgHXgdQAeaCjbzyayu+AsQFlC/9+YtLLDux8zu/EAihlKqwzJXt4MVy5TFpRNo8MUet1O6TYQsPxqNxjp+AcSX3LblpgnLP6o/PJauHI+Y+OTgDsM8hnRDYD6B8Jocu/5kHK/pNvHlWOcT3SkexO8ND+L3hgfxvMH+c8DSpYqiEOJMuENRFDhDZHguZi4LRWncMY4RDiOK+sPiUEVgY43riNBnWVbF/G0Qf2Z5lWOXIvOflm3+NoiHnB31KHoBofThfGP+VBKsuTMm/87S4sOx0e1LFvWbLMO6H2fyPjd4Aab5v9vWfikBDJMPuZnRfircIYuwThwujeWFD+e0c3sLlj5ZRJMsQup7IK0JQ+Pjo6WhgmGFuLguFDQ9o/svi3+sEGgDNogPWMx6XsjSZ8ILKhE21rgmrc26VTZpwNYaX1Ck5TDFMySx/bXxvWNEievt0jLKyz3KCTxWW75mIDjxKAOw86ti8KJ/IHfiMm5mTWEuqlh0CzP1K3drV1qMMaL8oF1py6ofzwCsyVmSG2Fhl162isLijSXWvuamokgQMcJKpYj3mycGg0mkiZ2ReY3k2YE8+1x0cCL7CELftnQh20Ma/Jrk4b3NjVtXZYMTGy9zqsnP+jJGcOYezDMwfm9lHHsnntH3+wcah6/lC0gYflJyLAzt4lmXzz+oIKjIL0PTrnQhx5+x4JM3FPDG97TOWdxRU5cNZUYZkHQzygrR5hvtApvN929ZYoldKDY3/Va+U8WhokKlTmcx776QxqamM7yQ5del/QUah0liwKGs8yp8Jz/QnJDz5RRzBLlP2dF70h9Kf0iXIO4gUNVEYMxz26eijQ3znhv9KF07F7gGcq/fFJNoqUjbLlUD2Fg9faL2S9G6UoONTPfDfQ3Lyu1zg4q5M269mGZN1+WnGHencaoH4p+kNMZStU2NWhBHTZ61BF/9zej+QD9lRF00DoDk3ualUuT68apPLYgzQZj3kq6AitUb6pKd5f55uS5rfMEa+0pXvADJQXx9Xps1Lj46Nz9ddeKOyrcWuLWYqhL/lBYTLeIv5QFVFRK9rVS+WOl1/h/V6MDWHIUGSAAAAABJRU5ErkJggg==" alt="">
+                
+                <h2>Web Development</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+
+
+            <div class="card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANsSURBVHgB7VqBddowED36GIBOUGcDMkFhgsIEMROUThAzQcgEcSdINwiZADIB3gA2UO+qUxGKJTmyZIe8/PfuSRZn6U53Op1kAD4IBk2YhBAzLMbQD3aDweAPtAUqcSf6x4NPzoFHCbLCFmmNdA/9YIn0E+kKLVPZmIbgxojLF+qEFauwfuT6UWs/ugZSQN4JFhn4QeNskH8HbUGDsmlzfiYUXN8jrbn+iNTIj5FvKxqC+XN+zFz9DnWhQZpQWWFew3+NVHF9inTk+i+t7gP1mzXge9UfK3OnyXivAsFQY3jil3dcjrQ+MlaUMObJUp3X1iNgxGPq0VKXK0MiT7hGZXZKAGW+sxCrudZ7QGbINub2nJ7NxW5zjxLpGfrBBOmmpv1MVl/UUnhG85XQA4R01xsf3xf4IOhMEfJxJO/MhqJLixRIJSozggToUpHvSBvKCiABoimCMz0Tlt1XnNKSUmsjV5tBJERRBAWi3fYRKbewqHY9hJMStKHdQgQ0Db+1YH8nBSYg04XCwqrcqlINWF+zBQshN+JFG7cLtggLQSn+BGmFQiwtfPQ78Zbmb/zOCqR1tsKTGLoQpIg4nVPIInOHJQg5l7WZAb87576ehJEmNUWoRW554LLBMfSVW5ngPkqQlsshAKFrZMHlklOIVZ1/a25V2DridUbBIkf67eJ1IcgiJDQSuQP5N/m5zb9zLmvdSpyOD8RHk5GHLvhW4Zf9mw5VGUj/zgwWq1tpSlC58KwzL1rvIxRGQZ4cCf83OFe0MninMTLrVvuIAp/QrozmnEtbtKIJWEMkpMy1vNEqJpIowv5PVEJH8LlWUAThu66vqTLdOvgsUoGc1Q28ERGVoPVHG6azv2EDYRbQIziQzH18piIPIu7dVEqcnTRNRTK4UJiKTLsKl23BkXGvnqNsiI6BzNPfKtVEJVMEpA9PjDaKPhUkQDJFLGlLMihFKi7pM9sLXAYyLg9nrahAIS4PBXzCAyG/tYwcv9MHnGgXc0kgTh+Mfjh4ZsyT7EK7FYS8At0TNeAlvoNocY9lotE/H2xgF6J7KHUTkoFMMivPq99AZtUVnJLSqpesgl3kIOIieO0EWwQHVTeNb/k07cK/v2mgVYI20TY7OymxY4oB6qcXi9CiziAy0CJBMrWxCLnUCOKiszP+u8VfpejmvyM3jCwAAAAASUVORK5CYII=" alt="">
+                
+                <h2>Video Editing</h2>
+                <p>Effect branding is cruials differenting Analytics</p>
+
+                <i class="fa-solid fa-arrow-right  icon"></i>
+            </div>
+        </div>
+    </div>
+    </div><!---about sections items  end-->
+
+    </div>
+
+        <!----about section end--------------->
+          <!----about section end--------------->
+
+
+
+
+
+
+          <!-----projects start----------->
+
+          <div class="projects min-h-[100vh] text-center grid justify-center items-center place-items-center  ">
+            <h4 class="text-2xl text-theme font-semibold">Latest Projects</h4>
+            <heading class="text-[3rem] font-[600]">We Have Compelete 2580+ Global Projects Explore Projects</heading>
+
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-12 place-content-center content-center max-w-fit  mt-14 mx-5">
+
+            <div class="grid gap-14">
+                <div class="project">
+                    <img src="/assets/Image-d4gDhddt.jpg" alt="">
+                    <h2>Creative Website Mockup</h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/Image2-DQ33BSoZ.jpg" alt="">
+                    <h2>Mobile Application Design</h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/Image3-5ZlP059m.jpg" alt="">
+                    <h2>Motion Design and Video Editing</h2>
+                    <p>Design-create Branding</p>
+                </div>
+            </div>
+            <div class="grid gap-16 mt-32 sm:mt-5">
+                <div class="project">
+                    <img src="/assets/Image4-DFUEt2Yk.jpg" alt="">
+                    <h2>Branidg Design Identity</h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/Image5-6P2tUCIr.jpg" alt="">
+                    <h2>3D Design Aanimation </h2>
+                    <p>Design-create Branding</p>
+                </div>
+
+                <div class="project">
+                    <img src="/assets/Image6-0ak54zan.jpg" alt="">
+                    <h2>Creative Bussiness Illustration</h2>
+                    <p>Design-create Branding</p>
+                </div>
+            </div>
+                
+                 </div>
+
+                 <button class="btn my-14 group"> Explore More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i></button>
+
+          </div>
+
+           <!---projects end------------------->   
+           <!---projects end-------------------> 
+
+
+
+
+           <!---why choose us -->
+
+
+           <div class="why-us p-[4%] sm:p-0 overflow-clip">
+            <div class="bg-bgBlack rounded-[1rem] sm:rounded-none text-white relative">
+
+
+                <marquee behavior="scrool" direction="center" scrollamount="15" class="text-[10rem] sm:text-[6rem] font-bold"> Awards Winning Agency</marquee>
+
+                <div class="grid grid-cols-2 md:grid-cols-1 place-items-center px-[7%] py-[5%]">
+                    <div>
+                        <header class="my-10">
+                            <h4 class="text-2xl">Why Choose Us</h4>
+                            <h2 class="text-4xl font-semibold">Proffesional and Award Winning Digital Marketing Agency</h2>
+                        </header>
+                            <div class="according z-10">
+                                <div class="according-item z-10">
+                                    <h2 class="more "><span>01. Company Misson and Vision</span> <span><i class="fa-solid fa-arrow-right"></i></span></h2>
+                                    <p>At our digital agency, we're not just about pixels and code; we're  architects digital experiences. With a blend of creativity,  technology, and strategy, we craft digital solutions that resonate with
+                                        audiences and drive results. From innovative web designs that captivate
+                                    </p>
+                                </div>
+                                <div class="according-item z-10">
+                                    <h2  class="more "><span>01. Company Misson and Vision</span> <span><i class="fa-solid fa-arrow-right"></i></span></h2>
+                                    <p>At our digital agency, we're not just about pixels and code; we're  architects digital experiences. With a blend of creativity,  technology, and strategy, we craft digital solutions that resonate with
+                                        audiences and drive results. From innovative web designs that captivate
+                                    </p>
+                                </div>
+                                <div class="according-item z-10">
+                                    <h2  class="more"><span>01. Company Misson and Vision</span> <span><i class="fa-solid fa-arrow-right"></i></span></h2>
+                                    <p>At our digital agency, we're not just about pixels and code; we're  architects digital experiences. With a blend of creativity,  technology, and strategy, we craft digital solutions that resonate with
+                                        audiences and drive results. From innovative web designs that captivate
+                                    </p>
+                                </div>
+                            </div>
+                       
+                    </div>
+                    <div class="z-[10]">
+                        <img class="h-[500px]  rounded-md z-[10]" src="/assets/Image-BCtO-RAJ.png"  alt="" >
+                    </div>
+                </div>
+            </div>
+           </div>
+
+
+           <!---why chose us end-->
+                <!---why chose us end-->
+
+
+
+                <!-----blog---------------->
+
+                <div class="blog min-h-[100vh] overflow-clip">
+                    <header class="text-center my-10">
+                        <h4 class="text-[1.4rem] text-theme">Best Testimonials</h4>
+                        <h2 class="text-[3rem] font-[600]">Explore Customer Say Our Work</h2>
+                    </header>
+
+                    <div class="slider-container pl-[16%] sm:pl-[10%] relative ">
+
+                       <div class="navigation absolute left-[5%] top-[6rem] sm:top-[25rem] sm:left-[5%] flex flex-col sm:flex-row sm:gap-4 ">
+
+                        <i class="fa-solid fa-arrow-right prev w-[50px] p-4   border-[1px] border-[gray] rounded-full rotate-[-140deg] my-2 sm:my-5 hover:bg-theme hover:border-transparent cursor-pointer" ></i>
+                        <i class="fa-solid fa-arrow-right next w-[50px] p-4  border-[1px] border-[gray] rounded-full rotate-45 my-5 hover:bg-theme hover:border-transparent cursor-pointer"></i>
+
+                       </div>
+
+
+                        <div class="slider flex overflow-x-scroll hide-scrollbar gap-20 ">
+
+                            <div class="slider-item  grid grid-cols-2 ">
+                                
+                                <div class="img">
+                                    <img src="/assets/Image-BHwBrKk2.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>" we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                            <div class="slider-item grid grid-cols-2">
+                                
+                                <div class="img">
+                                    <img src="/assets/Image2-mkJJnGrg.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>"we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresees,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                            <div class="slider-item grid grid-cols-2">
+                                
+                                <div class="img">
+                                    <img src="/assets/Image-BHwBrKk2.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>"we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                            <div class="slider-item grid grid-cols-2">
+                                
+                                <div class="img">
+                                    <img src="/assets/Image2-mkJJnGrg.jpg" alt="">
+                                </div>
+                                <div class="items-descride">
+                                    <h3>"we are so beguile and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee,,</h3>
+                                    
+                                    <p><i class="fa-solid fa-quote-right"></i> Michael M.Griffin<span>/CEO and Founder</span></p>
+                                </div>
+
+                            </div><!---slider item------>
+                        </div><!---slider end-->
+
+                    </div><!--slider container------>
+
+
+                </div>
+                <!---blog end---------------->
+                  <!---blog end---------------->
+
+
+
+
+
+                  <!----partner--------->
+
+                  <div class="partner grid grid-cols-5 sm:grid-cols-2  flex-wrap px-[10%] py-5 ">
+
+                   
+                    <div class="brand"><img src="/assets/Logo_1-DJv--6Gv.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_2-BNUNJxRe.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_3-BTyTOSzt.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_4-sCA4R9_y.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_5-BDKz-eBJ.jpg" alt=""></div>
+                
+
+                   
+                   
+                    <div class="brand"><img src="/assets/Logo_6-CrZGU_8i.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_7-CE5-Gq4C.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_8-PSSPJ6Xn.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_9-Rq_XRKKX.jpg" alt=""></div>
+                    <div class="brand"><img src="/assets/Logo_10-DeT6JTTz.jpg" alt=""></div>
+
+                
+                   </div>
+                  
+                   <marquee  behavior="scrool" direction="" scrollamount="15" class="bg-[gray] border-b-[0.5px]  flex items-center gap-10 h-[6rem] overflow-clip "> 
+                    <span><i class="fa-solid fa-arrow-right  icon"></i> Digital Agency</span>
+                    <span><i class="fa-solid fa-arrow-right  icon"></i> Marketing</span>
+                    <span><i class="fa-solid fa-arrow-right  icon"></i> SEO Camping</span>
+                </marquee>
+
+                  <!---partner end-------->
+                  
+                  <!---partner end-------->
+
+
+                  <!-----latest news-------------->
+
+                  <div class=" min-h-[90vh] flex flex-col items-center mb-20">
+
+                    <header class="text-center my-10">
+                        <h4 class="text-[1.4rem] text-theme">Latest News and Blog</h4>
+                        <h2 class="text-[2.5rem] font-[600]">Explore Latest News and Blog</h2>
+                    </header>
+
+                      <div class=" flex  gap-10  w-[80%] md:w-[95%] sm:flex-wrap border-text2 border-[1px] rounded-[10px] p-5"><!--latest news-->
+
+                        <div class="img  w-[70rem]"><img class="h-full" src="/assets/Image-5wwKKwn9.jpg" alt=""></div>
+
+                        <div class="news grid gap-10 mt-5">
+                            <p><span><i class="fa-solid fa-tag"></i> Creative Design</span> <span><i class="fa-solid fa-calendar-days"></i> December 25,2024</span></p>
+                            <h3 class="text-[1.8rem] font-bold">We thrive pushing boundaries an exceeding expectations team digital
+                                experts brings wealth knowledge
+                            </h3>
+                            <button class="btn w-fit inline-block h-fit group ">Read More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+                        </div>
+                        
+                    </div><!---latest news end-->
+
+
+
+                    <div class=" flex  gap-10  w-[80%] md:w-[95%] sm:flex-wrap  border-text2 border-[1px] rounded-[10px] p-5 mt-10"><!--latest news-->
+
+
+                        <div class="news grid gap-10 mt-5">
+                            <p><span><i class="fa-solid fa-tag"></i> Creative Design</span> <span><i class="fa-solid fa-calendar-days"></i> December 25,2024</span></p>
+                            <h3 class="text-[1.8rem] font-bold">We thrive pushing boundaries an exceeding expectations team digital
+                                experts brings wealth knowledge
+                            </h3>
+                            <button class="btn w-fit inline-block h-fit group ">Read More <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+                        </div>
+
+                        <div class="img  w-[70rem]"><img class="h-full" src="/assets/Image2-BC8C6xP_.jpg" alt=""></div>
+
+                        
+                    </div><!---latest news end-->
+
+                  </div>
+                  
+                  <!-----latest news end-------------->
+                  
+                  <!-----latest news end-------------->
+
+
+
+                <!---footer start----------------->
+
+                <footer class="min-h-[100vh] bg-bgBlack ">
+
+                    <marquee behavior="scrool" direction="center" scrollamount="15" class="text-[10rem] text-white sm:text-[6rem] font-bold border-b-[0.5px] border-text2 pb-10"> Get In Touch-Get In Touch</marquee>
+
+                    <div class="flex gap-5 text-white justify-evenly py-[5rem] mx-5 md:flex-wrap md:justify-start md:gap-20 "><!----->
+                      <div class="grid gap-10">
+                        <h3 class="text-[2rem] font-[600]">Unleashing brand potential through<br>
+                            creative design and innovation
+                        </h3>
+                        <button class="btn w-fit inline-block h-fit group ">Let's Talk Your Projects <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+                            
+                      </div>
+
+                      <div >
+                        <p class="text-[1.2rem] font-[500]">55 Main Stret, 2nd block</p>
+                        <p class="text-[1.2rem] font-[500]">Malborne, Australia</p>
+                        <p class="my-5">support@gmail.com</p>
+                        <p class="text-2xl font-medium">+008 01887239062</p>
+
+                      </div>
+                    </div>
+                    
+                    <!---------------------------------------->
+                    
+                    <div class="flex justify-center ">
+                    <div class="subscribe-button text-white flex md:flex-wrap md:justify-center md:mx-10 gap-10 items-center border-[1px] border-text2 px-[3%] py-5 rounded-[1rem] ">
+
+                        <p class="text-[1.8rem] font-bold">Subscribe Our Newsletter</p> 
+                        <i href="#" class="relative"> <input type="email" name="" id="" placeholder="Email-Addres " class="h-[3.5rem] w-[22rem] sm:w-[18rem] p-5 rounded-md">
+                            <button class="btn w-fit inline-block h-fit group absolute right-2 top-[9%] ">Subscribe <i class="fa-solid fa-arrow-right group-hover:ml-2 transition-all"></i> </button>
+
+                        </i>
+
+                    </div>
+                    </div>
+                    
+                    
+                    <!------------------------------------>
+
+                    <div class="flex md:flex-wrap md:gap-3 sm:justify-center justify-evenly items-center text-white py-3">
+
+                        <p>© 2024 Belook, All Rights Reserved</p>
+
+                     <a href=""><i class="fa-solid fa-arrow-up bg-theme text-white px-4 py-3 rounded-full"></i> </a>
+
+                        <p class="flex gap-5">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Linkedin</a>
+                            <a href="#">Instagram</a>
+                        </p>
+
+                        
+
+                    </div>
+
+                </footer>
+
+
+                <!---footer end----------->
+</body>
+<script src="script.js"></script>
+</html>
